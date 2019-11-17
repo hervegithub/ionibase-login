@@ -28,7 +28,7 @@ export class LoginPage {
       this.presentToast(uid);
     }).catch((err)=>{
       console.log(err);
-    })
+    });
   }
 
   presentToast(uid:any) {
