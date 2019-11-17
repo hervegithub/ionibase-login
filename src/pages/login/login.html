@@ -1,0 +1,26 @@
+
+
+<ion-content padding style="background-color: #464a59;">
+    <ion-navbar color="toolbar-background">
+    </ion-navbar>
+    <ion-list padding  style="margin-top:20%; background-color: #464a59;">
+        <h1 padding style="color: white;">Log In</h1>
+        <ion-item no-lines style="color:white; background-color: #464a59;border-bottom: whitesmoke 2px solid;padding: 0;">
+          <ion-icon name="person" item-start style="margin-top:30px;"></ion-icon>
+          <ion-label floating>Email</ion-label>
+          <ion-input type="text" value="" [(ngModel)]="email"></ion-input>
+        </ion-item>
+      
+        <ion-item no-lines style="color:white; background-color: #464a59; border-bottom: whitesmoke 2px solid;padding: 0;">
+          <ion-icon name="lock" item-start style="margin-top:30px;"></ion-icon>
+          <ion-label floating>Password</ion-label>
+          <ion-input type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+
+        <div padding text-center style="margin-top: 10px;">
+          <button ion-button round color="dark" style="color:whitesmoke;" (click)="onSignIn()">Suivant</button>
+          <p style="color:whitesmoke;">First time here ? <a>Sign Up</a></p>
+        </div>
+        
+      </ion-list>
+</ion-content>

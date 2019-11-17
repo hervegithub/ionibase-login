@@ -1,0 +1,33 @@
+<!--
+  Generated template for the RegisterPage page.
+
+  See http://ionicframework.com/docs/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+
+    <ion-content padding style="background-color: #464a59;">
+        <ion-navbar color="toolbar-background">
+        </ion-navbar>
+        <ion-list *ngIf="!isExist" no-lines padding  style="margin-top:20%; background-color: #464a59;">
+            <ion-item  style="color:white; background-color: #464a59;padding: 0;">
+                <h1 padding style="color: white;" item-start>New<br>Account</h1>
+                <p style="color:white;" item-end>1/2<br>Step</p>
+            </ion-item>
+
+            <ion-item no-lines style="color:white; background-color: #464a59;border-bottom: whitesmoke 2px solid;padding: 0;">
+              <ion-label floating>Name</ion-label>
+              <ion-input type="text" value="" [(ngModel)]="name"></ion-input>
+            </ion-item>
+          
+            <ion-item no-lines style="color:white; background-color: #464a59; border-bottom: whitesmoke 2px solid;padding: 0;">
+              <ion-label floating>pseudo</ion-label>
+              <ion-input type="text" [(ngModel)]="pseudo"></ion-input>
+            </ion-item>
+    
+            <div padding text-center style="margin-top: 10px;">
+              <button ion-button round color="dark" style="color:whitesmoke;" (click)="onSecondePage()">Suivant</button>
+              <p style="color:whitesmoke;">First time here ? <a>Sign In</a></p>
+            </div>
+            
+          </ion-list>
+    </ion-content>
